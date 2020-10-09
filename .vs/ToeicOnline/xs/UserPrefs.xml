@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{709629C9-5D9D-4670-864B-CA76DD31557E}|Default">
+  <MonoDevelop.Ide.ItemProperties.ToeicOnline PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ToeicOnline" expanded="True">
+            <Node name="ToeicOnline" expanded="True">
+              <Node name="Data" expanded="True">
+                <Node name="ToeicOnlineContext.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

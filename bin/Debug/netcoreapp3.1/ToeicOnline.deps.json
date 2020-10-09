@@ -27,6 +27,8 @@
           "Microsoft.EntityFrameworkCore.Design": "3.1.8",
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.8",
+          "Microsoft.EntityFrameworkCore.Tools": "3.1.8",
+          "Microsoft.Extensions.Logging.Debug": "3.1.8",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.4",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -130,7 +132,6 @@
           "Microsoft.Extensions.Localization": "3.1.0.0",
           "Microsoft.Extensions.Logging.Configuration": "3.1.0.0",
           "Microsoft.Extensions.Logging.Console": "3.1.0.0",
-          "Microsoft.Extensions.Logging.Debug": "3.1.0.0",
           "Microsoft.Extensions.Logging.EventLog": "3.1.0.0",
           "Microsoft.Extensions.Logging.EventSource": "3.1.0.0",
           "Microsoft.Extensions.Logging.TraceSource": "3.1.0.0",
@@ -760,6 +761,11 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/3.1.8": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "3.1.8"
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/3.1.8": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "3.1.8"
@@ -898,6 +904,20 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Debug/3.1.8": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.8"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {
+            "assemblyVersion": "3.1.8.0",
+            "fileVersion": "3.100.820.42004"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {}
         }
       },
       "Microsoft.Extensions.Options/3.1.8": {
@@ -2991,12 +3011,6 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Extensions.Logging.Debug/3.1.0.0": {
-        "compile": {
-          "Microsoft.Extensions.Logging.Debug.dll": {}
-        },
-        "compileOnly": true
-      },
       "Microsoft.Extensions.Logging.EventLog/3.1.0.0": {
         "compile": {
           "Microsoft.Extensions.Logging.EventLog.dll": {}
@@ -4163,6 +4177,13 @@
       "path": "microsoft.entityframeworkcore.sqlserver/3.1.8",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.3.1.8.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Tools/3.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HPvMrOlVVieK4E1DWdGTAzXgoPCyz2rkbnGYBpYaT4X34ml3xrMPQA1JIb5LejBydELBiKnoJq+qsOQ8sxFaCA==",
+      "path": "microsoft.entityframeworkcore.tools/3.1.8",
+      "hashPath": "microsoft.entityframeworkcore.tools.3.1.8.nupkg.sha512"
+    },
     "Microsoft.Extensions.Caching.Abstractions/3.1.8": {
       "type": "package",
       "serviceable": true,
@@ -4232,6 +4253,13 @@
       "sha512": "sha512-LxQPR/KE4P9nx304VcFipWPcW8ZOZOGHuiYlG0ncAQJItogDzR9nyYUNvziLObx2MfX2Z9iCTdAqEtoImaQOYg==",
       "path": "microsoft.extensions.logging.abstractions/3.1.8",
       "hashPath": "microsoft.extensions.logging.abstractions.3.1.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Debug/3.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/ktTfbzPjNobJpTVcs+olbPsHqGEt2bENkMDc6ipF5twp+CYbZZz2TeGjhMkAdKdRbjKKNeOwy4pR6JvCf3PrQ==",
+      "path": "microsoft.extensions.logging.debug/3.1.8",
+      "hashPath": "microsoft.extensions.logging.debug.3.1.8.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/3.1.8": {
       "type": "package",
@@ -5677,11 +5705,6 @@
       "sha512": ""
     },
     "Microsoft.Extensions.Logging.Console/3.1.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Extensions.Logging.Debug/3.1.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

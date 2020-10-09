@@ -22,6 +22,16 @@ namespace ToeicOnline.Migrations
                 {
                     table.PrimaryKey("PK_User", x => x.id);
                 });
+
+            migrationBuilder.InsertData(
+                table: "User",
+                columns: new[] { "id", "birthday", "password", "phonenumber", "username" },
+                values: new object[] { 1, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified).AddTicks(1974), "123456", 338915243, "tung" });
+
+            migrationBuilder.InsertData(
+                table: "User",
+                columns: new[] { "id", "birthday", "password", "phonenumber", "username" },
+                values: new object[] { 2, new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified).AddTicks(1974), "123456", 338915243, "anhtung" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -31,4 +41,3 @@ namespace ToeicOnline.Migrations
         }
     }
 }
-    

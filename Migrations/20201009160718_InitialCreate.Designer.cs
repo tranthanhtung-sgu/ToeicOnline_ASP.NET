@@ -9,7 +9,7 @@ using ToeicOnline.Data;
 namespace ToeicOnline.Migrations
 {
     [DbContext(typeof(ToeicOnlineContext))]
-    [Migration("20201008152820_InitialCreate")]
+    [Migration("20201009160718_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,6 +41,24 @@ namespace ToeicOnline.Migrations
                     b.HasKey("id");
 
                     b.ToTable("User");
+
+                    b.HasData(
+                        new
+                        {
+                            id = 1,
+                            birthday = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified).AddTicks(1974),
+                            password = "123456",
+                            phonenumber = 338915243,
+                            username = "tung"
+                        },
+                        new
+                        {
+                            id = 2,
+                            birthday = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified).AddTicks(1974),
+                            password = "123456",
+                            phonenumber = 338915243,
+                            username = "anhtung"
+                        });
                 });
 #pragma warning restore 612, 618
         }
